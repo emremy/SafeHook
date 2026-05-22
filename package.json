@@ -1,5 +1,5 @@
 {
-  "name": "safehook",
+  "name": "@safehook/safehook",
   "version": "0.1.0",
   "description": "Framework-agnostic webhook reliability primitives for TypeScript.",
   "type": "module",
