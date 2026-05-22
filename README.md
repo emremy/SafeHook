@@ -38,7 +38,7 @@ SafeHook is not:
 ## Installation
 
 ```bash
-npm install safehook
+npm install @safehook/safehook
 ```
 
 SafeHook does not install Redis, PostgreSQL, or provider SDKs for you. If your application wants those integrations, your application owns those dependencies.
