@@ -1,4 +1,4 @@
-import { createSafeHook, customProvider, memoryStore } from "safehook";
+import { createSafeHook, customProvider, memoryStore } from "@safehook/safehook";
 
 const safehook = createSafeHook({
   store: memoryStore<{ id: string; type: string }>(),

@@ -2,7 +2,7 @@ import "reflect-metadata";
 import { Body, Controller, Headers, Module, Post } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
 import pg from "pg";
-import { createSafeHook, customProvider, postgresStore } from "safehook";
+import { createSafeHook, customProvider, postgresStore } from "@safehook/safehook";
 
 interface WebhookEvent {
   id: string;

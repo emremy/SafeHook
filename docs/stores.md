@@ -13,7 +13,7 @@ Persistence defaults in SafeHook core:
 Minimal-persistence setup:
 
 ```ts
-import { createSafeHook, memoryStore } from "safehook";
+import { createSafeHook, memoryStore } from "@safehook/safehook";
 
 const safehook = createSafeHook({
   store: memoryStore(),
@@ -31,7 +31,7 @@ Use `redisStore(client, { mode: "node-redis" })` for distributed systems when us
 
 ```ts
 import { createClient } from "redis";
-import { redisStore } from "safehook";
+import { redisStore } from "@safehook/safehook";
 
 const client = createClient({ url: process.env.REDIS_URL });
 await client.connect();
@@ -39,7 +39,7 @@ await client.connect();
 const store = redisStore(client, { mode: "node-redis" });
 ```
 
-SafeHook does not depend on `redis`; your application installs and owns the client. Installing `safehook` alone should not pull Redis into the consumer app.
+SafeHook does not depend on `redis`; your application installs and owns the client. Installing `@safehook/safehook` alone should not pull Redis into the consumer app.
 
 For custom clients, use `mode: "redis-like"` or omit `mode`. The client must implement `get`, `set` with `NX`/`XX`, and optionally `del`.
 
@@ -60,7 +60,7 @@ Use `postgresStore(client, { mode: "pg" })` for durable audit trails when using 
 
 ```ts
 import pg from "pg";
-import { postgresStore } from "safehook";
+import { postgresStore } from "@safehook/safehook";
 
 const client = new pg.Client({ connectionString: process.env.DATABASE_URL });
 await client.connect();
@@ -68,7 +68,7 @@ await client.connect();
 const store = postgresStore(client, { mode: "pg" });
 ```
 
-SafeHook does not depend on `pg`; your application installs and owns the client. Installing `safehook` alone should not pull PostgreSQL client libraries into the consumer app.
+SafeHook does not depend on `pg`; your application installs and owns the client. Installing `@safehook/safehook` alone should not pull PostgreSQL client libraries into the consumer app.
 
 For custom clients, use `mode: "postgres-like"` or omit `mode`. The client must implement a `query(sql, params)` method compatible with SafeHook's schema.
 

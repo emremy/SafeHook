@@ -1,4 +1,4 @@
-import { createSafeHook, memoryStore, stripe, type StripeEvent } from "safehook";
+import { createSafeHook, memoryStore, stripe, type StripeEvent } from "@safehook/safehook";
 
 const safehook = createSafeHook({
   store: memoryStore<StripeEvent>(),

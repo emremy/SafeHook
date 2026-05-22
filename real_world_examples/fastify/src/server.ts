@@ -1,7 +1,7 @@
 import Fastify from "fastify";
 import pg from "pg";
 import { createClient } from "redis";
-import { createSafeHook, customProvider, postgresStore, redisStore } from "safehook";
+import { createSafeHook, customProvider, postgresStore, redisStore } from "@safehook/safehook";
 
 interface WebhookEvent {
   id: string;

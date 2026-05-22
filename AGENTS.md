@@ -22,7 +22,7 @@ It is not a queue, workflow engine, ORM, or hosted webhook platform.
    - Do not silently expand persistence of sensitive payload material.
 
 2. Storage integrations must remain dependency-free by default.
-   - Installing `safehook` alone must not require `redis`, `pg`, or similar client libraries.
+   - Installing `@safehook/safehook` alone must not require `redis`, `pg`, or similar client libraries.
    - Redis/Postgres support should work through user-supplied clients and minimal interfaces.
    - If docs show Redis/Postgres examples, they must clearly say the consuming app installs those clients.
 

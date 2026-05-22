@@ -4,7 +4,7 @@ import {
   stripe,
   type StripeCheckoutSessionEvent,
   type StripeCheckoutSessionObject,
-} from "safehook";
+} from "@safehook/safehook";
 
 const safehook = createSafeHook<StripeCheckoutSessionEvent<"checkout.session.completed">>({
   store: memoryStore(),

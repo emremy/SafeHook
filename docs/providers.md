@@ -3,7 +3,7 @@
 ## Stripe
 
 ```ts
-import { stripe } from "safehook";
+import { stripe } from "@safehook/safehook";
 
 provider: stripe({
   secret: process.env.STRIPE_WEBHOOK_SECRET!,
@@ -19,7 +19,7 @@ If you want stronger event typing without narrowing Stripe's full event surface,
 - `StripePaymentIntentEvent`
 
 ```ts
-import { type StripeCheckoutSessionEvent } from "safehook";
+import { type StripeCheckoutSessionEvent } from "@safehook/safehook";
 
 type CheckoutCompletedEvent = StripeCheckoutSessionEvent<"checkout.session.completed">;
 ```
@@ -31,7 +31,7 @@ import {
   stripe,
   type StripeCheckoutSessionEvent,
   type StripeCheckoutSessionObject,
-} from "safehook";
+} from "@safehook/safehook";
 
 const provider = stripe<"checkout.session.completed", StripeCheckoutSessionObject>({
   secret: process.env.STRIPE_WEBHOOK_SECRET!,
@@ -43,7 +43,7 @@ type CheckoutCompletedEvent = StripeCheckoutSessionEvent<"checkout.session.compl
 ## GitHub
 
 ```ts
-import { github } from "safehook";
+import { github } from "@safehook/safehook";
 
 provider: github({
   secret: process.env.GITHUB_WEBHOOK_SECRET!,
@@ -59,7 +59,7 @@ GitHub event type comes from the `x-github-event` header, so SafeHook keeps the 
 - `GitHubPushEvent`
 
 ```ts
-import { github, type GitHubIssuesEvent } from "safehook";
+import { github, type GitHubIssuesEvent } from "@safehook/safehook";
 
 const provider = github<GitHubIssuesEvent>({
   secret: process.env.GITHUB_WEBHOOK_SECRET!,
@@ -69,7 +69,7 @@ const provider = github<GitHubIssuesEvent>({
 ## Custom
 
 ```ts
-import { customProvider } from "safehook";
+import { customProvider } from "@safehook/safehook";
 
 provider: customProvider({
   getEventId: (event) => event.id,

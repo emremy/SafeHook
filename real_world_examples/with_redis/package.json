@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "redis": "^4.7.0",
-    "safehook": "file:../..",
+    "@safehook/safehook": "file:../..",
     "tsx": "^4.19.4"
   }
 }

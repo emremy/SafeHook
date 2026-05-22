@@ -11,7 +11,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "redis": "^4.7.0",
-    "safehook": "file:../.."
+    "@safehook/safehook": "file:../.."
   },
   "devDependencies": {
     "@types/node": "^22.15.21",

@@ -4,7 +4,7 @@
     "noEmit": true,
     "rootDir": ".",
     "paths": {
-      "safehook": ["./src/index.ts"]
+      "@safehook/safehook": ["./src/index.ts"]
     }
   },
   "include": ["examples/**/*.ts"]

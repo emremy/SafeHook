@@ -1,5 +1,5 @@
 import pg from "pg";
-import { createSafeHook, customProvider, postgresStore } from "safehook";
+import { createSafeHook, customProvider, postgresStore } from "@safehook/safehook";
 
 interface ExampleEvent {
   id: string;

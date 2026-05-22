@@ -49,7 +49,7 @@ SafeHook does not install Redis, PostgreSQL, or provider SDKs for you. If your a
 ## Quickstart
 
 ```ts
-import { createSafeHook, memoryStore, stripe } from "safehook";
+import { createSafeHook, memoryStore, stripe } from "@safehook/safehook";
 
 const safehook = createSafeHook({
   store: memoryStore(),

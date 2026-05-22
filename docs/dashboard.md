@@ -3,7 +3,7 @@
 Dashboard functionality is outside SafeHook core. The first supported surface is a read-only HTML explorer generator:
 
 ```ts
-import { createDashboardHtml } from "safehook";
+import { createDashboardHtml } from "@safehook/safehook";
 
 const html = createDashboardHtml({
   records: await store.listFailures?.() ?? [],

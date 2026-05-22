@@ -1,5 +1,5 @@
 import { createClient } from "redis";
-import { createSafeHook, customProvider, redisStore } from "safehook";
+import { createSafeHook, customProvider, redisStore } from "@safehook/safehook";
 
 interface WebhookEvent {
   id: string;
