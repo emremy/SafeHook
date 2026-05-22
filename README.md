@@ -1,5 +1,8 @@
 # SafeHook
 
+[![npm version](https://img.shields.io/npm/v/@safehook/safehook.svg)](https://www.npmjs.com/package/@safehook/safehook)
+[![npm downloads](https://img.shields.io/npm/dm/@safehook/safehook.svg)](https://www.npmjs.com/package/@safehook/safehook)
+
 Reliable webhook processing primitives for TypeScript.
 
 SafeHook helps you verify, dedupe, track, and replay webhook deliveries without forcing you into a framework, queue, ORM, or storage stack.
