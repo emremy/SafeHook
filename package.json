@@ -41,6 +41,14 @@
     "stripe",
     "github"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emremy/SafeHook.git"
+  },
+  "homepage": "https://github.com/emremy/SafeHook#readme",
+  "bugs": {
+    "url": "https://github.com/emremy/SafeHook/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.15.21",
