@@ -1,0 +1,13 @@
+{
+  "name": "safehook-example-with-redis",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "redis": "^4.7.0",
+    "safehook": "file:../..",
+    "tsx": "^4.19.4"
+  }
+}

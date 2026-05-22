@@ -1,0 +1,13 @@
+services:
+  redis:
+    image: redis:7-alpine
+  app:
+    build:
+      context: ../..
+      dockerfile: real_world_examples/nextjs/Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - redis

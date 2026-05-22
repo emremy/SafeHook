@@ -1,0 +1,16 @@
+{
+  "name": "safehook-example-with-postgres",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "pg": "^8.16.0",
+    "safehook": "file:../..",
+    "tsx": "^4.19.4"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.2"
+  }
+}

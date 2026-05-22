@@ -1,0 +1,11 @@
+services:
+  redis:
+    image: redis:7-alpine
+  app:
+    build:
+      context: ../..
+      dockerfile: real_world_examples/with_redis/Dockerfile
+    environment:
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - redis

@@ -1,0 +1,21 @@
+{
+  "name": "safehook-example-nextjs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "start": "next dev --hostname 0.0.0.0"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "redis": "^4.7.0",
+    "safehook": "file:../.."
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "typescript": "^5.8.3"
+  }
+}
